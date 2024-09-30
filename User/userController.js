@@ -2,7 +2,7 @@ const express = require('express');
 const { userDataValidation } = require('./userValidator');
 const { validationResult } = require('express-validator')
 const router = express.Router();
-const User = require('./UserSchema');
+const User = require('./userSchema');
 
 
 router.post('/register', userDataValidation, async (req, res) => {
